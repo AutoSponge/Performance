@@ -1,4 +1,4 @@
-var boundry = 22,
+var boundary = 22,
 factorial = {
     "recursive": function () {
         return function fact(n){
