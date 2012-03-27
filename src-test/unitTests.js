@@ -108,8 +108,8 @@ require(['lib/domReady'], function (domReady) {
         function factTest(name){
             return function () {
                 var n, fact = factorial[name]();
-                expect(2 * (boundry - 1));
-                for (n = 1; n < boundry; n += 1) {
+                expect(2 * (boundary - 1));
+                for (n = 1; n < boundary; n += 1) {
                     equal(fact(n), Number(answers[n - 1]));
                     equal(BigInteger(fact(n)).compare(answers[n - 1]), 0);
                 }
