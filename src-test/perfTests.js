@@ -15,7 +15,7 @@ require(['lib/domReady'], function (domReady) {
             var f = factorial[i]();
             return function () {
                 var n;
-                for (n = 1; n < boundry; n += 1) {
+                for (n = 1; n < boundary; n += 1) {
                     f(n);
                 }
             }
@@ -23,7 +23,7 @@ require(['lib/domReady'], function (domReady) {
         "factorial 1 - 21 dump cache": function factTestDumpCache(i) {
             return function () {
                 var n;
-                for (n = 1; n < boundry; n += 1) {
+                for (n = 1; n < boundary; n += 1) {
                     factorial[i]()(n);
                 }
             }
