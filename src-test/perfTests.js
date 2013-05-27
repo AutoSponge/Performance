@@ -1,4 +1,4 @@
-require(['lib/domReady'], function (domReady) {
+(function ($) {
     var tests = {
         "factorial once (20)": function (i) {
             var f = factorial[i]();
@@ -65,7 +65,7 @@ require(['lib/domReady'], function (domReady) {
             'async': true
         });
     };
-    domReady(function () {
+    $(function () {
         var name;
         for (name in tests) {
             if (tests.hasOwnProperty(name)) {
@@ -73,4 +73,4 @@ require(['lib/domReady'], function (domReady) {
             }
         }
     });
-});
+}(jQuery));

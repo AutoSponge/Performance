@@ -1,5 +1,5 @@
-require(['lib/domReady'], function (domReady) {
-    domReady(function () {
+(function () {
+    $(function () {
         var answers = [
         "1",
         "2",
@@ -122,4 +122,4 @@ require(['lib/domReady'], function (domReady) {
             }
         }
     });
-});
+}());
